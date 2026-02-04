@@ -1,0 +1,49 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "أنونيموس" ]
+  pull_request:
+    branches: [ "أنونيموس" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: configure
+      run: ./configure
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
+ادوات  سحق الضحية بلكاملpermissions:
+  asymptote
+  cuse
+  dnsutils
+  duktape
+  dust
+  gnuski
+  has
+   hfsutils
+  hstr
+  hub
+  hugin
+  hugo
+  hut
+  just
+  psmisc
+  putty
+  ruby
+  rush
+  rust
+  taskwarrior
+  unixodbc
+  usql
+  wireless-tools
+  wushmaster
+  344662437d4c349ff71
